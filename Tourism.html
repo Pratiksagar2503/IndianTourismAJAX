@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tourism</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <style>
+    .ltr {
+      background-color: ghostwhite;
+    }
+
+    .lst {
+      border-bottom: 1px solid grey;
+    }
+    .nav_bg{
+      background-color: rgb(96, 56, 8);
+     }
+    .bgm{
+      background-color: rgb(144, 80, 27);
+    }
+    .icons{
+color: rgb(144, 80, 27);
+     }
+     .second{
+      background-color: rgb(121, 81, 48);
+
+     }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!-- top line-section starts -->
+
+      <div class="d-flex justify-content-between">
+
+        <h5> <a href="https://www.facebook.com/" class="icons d-block">
+            <i class="bi bi-facebook"></i>
+          </a></h5>
+
+
+        <h5><a href="https://www.instagram.com/" class="icons d-block">
+          <i class="bi bi-instagram"></i>
+        </a></h5>
+
+
+       <h5> <a href="https://telegram.org/" class="icons d-block">
+          <i class="bi bi-telegram"></i>
+        </a></h5>
+
+
+        <h5><a href="https://in.linkedin.com/" class="icons d-block">
+          <i class="bi bi-linkedin"></i>
+        </a></h5>
+
+
+       <h5> <a href="https://www.gmail.com/" class="icons d-block">
+          <i class="bi bi-envelope-fill"></i>
+        </a></h5>
+
+
+       <h5> <a href="https://www.twitter.com/" class="icons d-block">
+          <i class="bi bi-twitter"></i>
+        </a></h5>
+
+
+        <h5><a href="#" class="icons d-block"> <i class="bi bi-phone"></i> </a></h5>
+
+
+        <h5 class=" icons d-inline font-weight-bold">epaper</h5>
+
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- logosection starts -->
+
+  <div class="d-flex justify-content-center rounded ltr">
+    <img src="logo1.png" class="img-fluid" alt="" />
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-md nav_bg navbar-dark rounded sticky-top mt-sm-2 shadow-sm">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">  
+          <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <a class="nav-item nav-link active mx-3 font-weight-bolder" href="Index.html">Home <span
+          class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link mx-sm-3 font-weight-bolder" href="Tourism.html">Tourism</a>
+      <a class="nav-item nav-link mx-sm-3 font-weight-bolder" href="Heritage.html">Heritage</a>
+      <a class="nav-item nav-link mx-sm-3 font-weight-bolder" href="Nature.html">Natural Sites</a>
+      <a class="nav-item nav-link mx-sm-3 font-weight-bolder" href="Palaces.html">Palaces</a>
+      <a class="nav-item nav-link mx-sm-3 font-weight-bolder" href="Forts.html">Forts</a>
+      <a class="nav-item nav-link mx-sm-3 font-weight-bolder" href="Nationalpark.html">National Parks</a>
+      </div>
+    </div>
+  </nav>
+  <hr />
+  <!-- Main news section starts -->
+  <div class="row">
+    <div class="col-sm-2 ltr">
+      <div class="second py-1 rounded">
+
+        <h5 class="text-light shadow-sm font-weight-bolder mt-2 " align="center">"INDIAN MONUMENTS"</h5>
+      </div>
+      <marquee behavior="" direction="down">
+        <ul id="lstAcc" class="list-group list-group-flush shadow-sm">
+        </ul>
+      </marquee>
+    </div>
+    <div class="col-sm-10">
+      <div class="second py-1 rounded">
+        <h5 class="text-light shadow-sm font-weight-bolder mt-2" align="center">"MONUMENTS OF INDIA"</h5>
+      </div>
+      <div id="newsAcc">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h4 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+              </button>
+            </h4>
+          </div>
+          <div id="collapseOne " class="collapse" aria-labelledby="headingOne" data-parent="#newsAcc">
+            <div class="card-img-top d-flex justify-content-center"><img src="" alt="" /></div>
+            <div class="card-body"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pagination  -->
+    <nav aria-label="Page navigation example" class="m-auto mt-2 ">
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link text-dark" href="#" onclick="handlePriviousPage()">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link  text-dark" href="#" onclick="handleNextPage()">Next</a></li>
+      </ul>
+    </nav>
+    <!-- Footer Section starts -->
+
+    <div class="container-fluid row nav_bg mt-sm-3">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-2 pt-sm-5 text-white text-center">
+        <ul class="list-unstyled">
+          <li class="list text-light font-weight-bold">
+            <a class="text-light" href="#"> Home </a>
+          </li>
+          <li class="list text-light">
+            <a class="text-light" href="#">News </a>
+          </li>
+          <li class="list text-light">
+            <a class="text-light" href="#"> CoronaVirus </a>
+          </li>
+          <li class="list text-light">
+            <a class="text-light" href="#"> Opinion </a>
+          </li>
+          <li class="list text-light">
+            <a class="text-light" href="#"> Business </a>
+          </li>
+          <li class="list text-light">
+            <a class="text-light" href="#"> Sports </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-2 pt-sm-5 text-white text-center">
+        <ul class="list-unstyled">
+          <li class="list text-light font-weight-bold">
+            <a class="text-light" href="#"> About us </a>
+          </li>
+          <li class="list text-light">
+            <a class="text-light" href="#">Term of Use </a>
+          </li>
+          <li class="list text-light">
+            <a class="text-light" href="#"> Contacts </a>
+          </li>
+          <li class="list text-light">
+            <a class="text-light" href="#"> Privacy Policy </a>
+          </li>
+          <li class="list text-light">
+            <a class="text-light" href="#"> Ebooks </a>
+          </li>
+          <li class="list text-light">
+            <a class="text-light" href="#"> Images </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-2 pt-sm-5 text-white text-center">
+        <ul class="list-unstyled">
+          <li class="list text-light font-weight-bold">
+            <a class="text-light" href="#"> State </a>
+          </li>
+          <li class="list text-light">
+            <a class="text-light" href="#">Karnataka </a>
+          </li>
+          <li class="list text-light">
+            <a class="text-light" href="#"> Magazine </a>
+          </li>
+          <li class="list text-light">
+            <a class="text-light" href="#"> Kerala </a>
+          </li>
+          <li class="list text-light">
+            <a class="text-light" href="#"> Manipur </a>
+          </li>
+          <li class="list text-light">
+            <a class="text-light" href="#"> Madhyapradesh </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-5 pt-sm-5 px-sm-3">
+        <img src="logo1.png" alt="" class="h-75" />
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="tourism.js"></script>
+</body>
+
+</html>
