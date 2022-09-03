@@ -7,7 +7,7 @@ const xhr = new XMLHttpRequest();
 xhr.open(
   "GET",
   // "https://github.com/Pratiksagar2503/newsproject/blob/master/db.json"
-  "Home.json", true
+  "home.json", true
 );
 
 xhr.onload = function () {
